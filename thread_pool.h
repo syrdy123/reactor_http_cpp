@@ -12,9 +12,6 @@ public:
 	ThreadPool(EventLoop* event_loop,int count);
 	~ThreadPool();
 
-	//初始化线程池
-	ThreadPool* thread_pool_init(EventLoop* main_loop, size_t count);
-
 	//启动
 	void run();
 

@@ -29,6 +29,5 @@ private:
 	std::condition_variable m_condition; //条件变量
 
 	EventLoop* m_event_loop; //反应堆模型
-
 };
 

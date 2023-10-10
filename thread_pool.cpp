@@ -2,7 +2,6 @@
 
 void ThreadPool::run()
 {
-
 	assert(!m_is_start);
 
 	if (m_main_loop->get_thread_id() != std::this_thread::get_id()) {

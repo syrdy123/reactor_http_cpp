@@ -45,8 +45,6 @@ int TcpConnection::process_read(void* arg) {
 	//读数据
 	int count = conn->m_read_buffer->socket_read(socket);
 
-	Debug("The received http request data : %s", conn->m_read_buffer->data());
-
 	if (count > 0) {
 		//解析 http 请求
 

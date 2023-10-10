@@ -15,10 +15,8 @@ int TcpServer::accept_connection(void* arg) {
 }
 
 
-TcpServer::TcpServer(unsigned short port, int thread_count)
+TcpServer::TcpServer(unsigned short port, int thread_count):m_port(port),m_thread_count(thread_count)
 {
-	m_port = port;
-	m_thread_count = thread_count;
 	set_listen();
 
 	m_main_loop = new EventLoop;
